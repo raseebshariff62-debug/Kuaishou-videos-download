@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Meta tag from user -->
+  <meta name="google-site-verification" content="eucx-AiW8uvd5dYfmKp-H6iyfPZx7BVzuqV8FMUgxaA" />
+  <title>Kuaivideos Downloader</title>
+  <!-- external scripts (ad) – placed early but async/deferred where possible -->
+  <script async="async" data-cfasync="false" src="https://pl31197671.profitableratecpmnetwork.com/f1986d115ef2309c3ccc4d0a0e4978aa/invoke.js"></script>
+  <!-- additional ad script (highrevenue) -->
+  <script>
+    // atOptions defined before invoke
+    atOptions = {
+      'key' : 'a0ff35694b34eb4b9b3b5f50ca1a2e4a',
+      'format' : 'iframe',
+      'height' : 60,
+      'width' : 468,
+      'params' : {}
+    };
+  </script>
+  <script src="https://www.highrevenueformat.com/a0ff35694b34eb4b9b3b5f50ca1a2e4a/invoke.js"></script>
+  <!-- third party script -->
+  <script src="https://pl31197673.profitableratecpmnetwork.com/7d/1c/92/7d1c925f3e60727db4a7d04ed8e8e390.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #fff;
+      background:
+        radial-gradient(circle at 15% 10%, #26345d, transparent 35%),
+        radial-gradient(circle at 85% 90%, #173b3c, transparent 35%),
+        #070a11;
+    }
+
+    header {
+      padding: 20px 7%;
+      border-bottom: 1px solid rgba(255, 255, 255, .08);
+      backdrop-filter: blur(20px);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 21px;
+      font-weight: 800;
+    }
+
+    .logo {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 13px;
+      background: linear-gradient(135deg, #fff, #8ea0ff);
+      color: #090c14;
+      box-shadow: 0 10px 35px rgba(130, 150, 255, .25);
+    }
+
+    main {
+      width: min(950px, 92%);
+      margin: auto;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 0 45px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 15px;
+      border: 1px solid rgba(255, 255, 255, .12);
+      background: rgba(255, 255, 255, .05);
+      border-radius: 999px;
+      color: #cbd3e8;
+      font-size: 13px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 1;
+      letter-spacing: -3px;
+      margin-bottom: 22px;
+      background: linear-gradient(90deg, #fff, #9eaaff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      max-width: 650px;
+      margin: auto;
+      color: #9ca6ba;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    .box {
+      margin: 38px auto 0;
+      max-width: 780px;
+      padding: 9px;
+      display: flex;
+      gap: 8px;
+      border: 1px solid rgba(255, 255, 255, .12);
+      background: rgba(255, 255, 255, .06);
+      border-radius: 20px;
+      box-shadow: 0 25px 70px rgba(0, 0, 0, .35);
+      backdrop-filter: blur(20px);
+    }
+
+    input {
+      flex: 1;
+      min-width: 0;
+      border: 0;
+      outline: 0;
+      background: transparent;
+      color: #fff;
+      padding: 17px;
+      font-size: 15px;
+    }
+
+    input::placeholder {
+      color: #717b90;
+    }
+
+    button {
+      border: 0;
+      cursor: pointer;
+      border-radius: 14px;
+      padding: 0 22px;
+      font-weight: 800;
+      transition: .25s;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+    }
+
+    .paste {
+      color: #dfe5f3;
+      background: rgba(255, 255, 255, .08);
+      border: 1px solid rgba(255, 255, 255, .1);
+    }
+
+    .download {
+      color: #080b12;
+      background: #fff;
+    }
+
+    .status {
+      display: none;
+      max-width: 700px;
+      margin: 20px auto 0;
+      padding: 15px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, .05);
+      color: #c4ccdd;
+    }
+
+    .loader {
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 8px;
+      border: 3px solid rgba(255, 255, 255, .2);
+      border-top-color: #fff;
+      border-radius: 50%;
+      animation: spin .8s linear infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin: 10px 0 70px;
+    }
+
+    .card {
+      padding: 25px;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, .08);
+      background: rgba(255, 255, 255, .045);
+    }
+
+    .card-icon {
+      font-size: 27px;
+      margin-bottom: 13px;
+    }
+
+    .card h3 {
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: #8e98ab;
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    /* ad containers - subtle integration */
+    .ad-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin: 30px auto 20px;
+      max-width: 780px;
+      background: rgba(255,255,255,0.02);
+      border-radius: 24px;
+      padding: 12px 8px;
+      border: 1px solid rgba(255,255,255,0.04);
+    }
+
+    .ad-section > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 60px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      border-top: 1px solid rgba(255, 255, 255, .06);
+      color: #687286;
+      font-size: 13px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 650px) {
+      .hero {
+        padding-top: 55px;
+      }
+      h1 {
+        letter-spacing: -2px;
+      }
+      .box {
+        flex-wrap: wrap;
+      }
+      input {
+        flex-basis: 100%;
+      }
+      button {
+        height: 48px;
+        flex: 1;
+      }
+      .features {
+        grid-template-columns: 1fr;
+      }
+      .ad-section {
+        flex-direction: column;
+        gap: 12px;
+        padding: 16px 4px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <div class="logo">K</div>
+      Kuaivideos
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+
+      <div class="badge">
+        ⚡ Fast • Simple • Easy
+      </div>
+
+      <h1>
+        Kuaishou Video Downloader
+      </h1>
+
+      <p class="subtitle">
+        Paste your public Kuaishou video link and process it quickly.
+      </p>
+
+      <div class="box">
+
+        <input
+        id="url"
+        type="url"
+        placeholder="Paste Kuaishou video URL..."
+        >
+
+        <button class="paste" onclick="pasteURL()">
+          Paste
+        </button>
+
+        <button class="download" onclick="processVideo()">
+          Download
+        </button>
+
+      </div>
+
+      <div id="status" class="status"></div>
+
+      <!-- ad block: container + inline ad (from user) -->
+      <div class="ad-section">
+        <div id="container-f1986d115ef2309c3ccc4d0a0e4978aa"></div>
+        <!-- additional highrevenue iframe is placed here (script already loaded) -->
+        <div style="min-width: 200px; min-height: 60px; display: flex; align-items: center; justify-content: center;">
+          <!-- placeholder for the highrevenue ad (script renders it) -->
+          <span style="font-size:12px; color:#6a7488;">&nbsp;</span>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="features">
+
+      <div class="card">
+        <div class="card-icon">🔗</div>
+        <h3>Easy</h3>
+        <p>
+          Simply paste your public Kuaishou video link.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">⚡</div>
+        <h3>Fast</h3>
+        <p>
+          Simple and lightweight downloader interface.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">📱</div>
+        <h3>Mobile Friendly</h3>
+        <p>
+          Works smoothly on phones, tablets and desktops.
+        </p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 Kuaivideos Downloader
+  </footer>
+
+  <script>
+    // ===== Core functionality =====
+    async function pasteURL() {
+      try {
+        const text = await navigator.clipboard.readText();
+        if (!text) {
+          show("Clipboard is empty.");
+          return;
+        }
+        document.getElementById("url").value = text.trim();
+        show("✓ URL pasted.");
+      } catch {
+        show("Please paste the URL manually.");
+      }
+    }
+
+    function processVideo() {
+      const input = document.getElementById("url");
+      const url = input.value.trim();
+
+      if (!url) {
+        show("Please enter a Kuaishou video URL.");
+        return;
+      }
+      if (!/^https?:\/\//i.test(url)) {
+        show("Please enter a valid URL.");
+        return;
+      }
+
+      show('<span class="loader"></span> Processing video...');
+
+      // Simulate backend call (replace with real endpoint)
+      setTimeout(() => {
+        show(
+          "✓ URL received. Connect your server/API backend to generate the download link."
+        );
+      }, 1200);
+    }
+
+    function show(message) {
+      const status = document.getElementById("status");
+      status.style.display = "block";
+      status.innerHTML = message;
+    }
+
+    // ensure that the ad containers are not empty (some scripts may require re-invocation)
+    // but we keep them as they are – the external scripts will populate.
+    // Also: the highrevenue script uses 'atOptions' defined before, OK.
+    // Additional script from profitableratecpm is loaded.
+    console.log("Kuaivideos Downloader ready.");
+  </script>
+
+  <!-- extra safety: some ad scripts might rely on window.onload, we keep them -->
+</body>
+</html>
